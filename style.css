@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+
+}
+body{
+overflow-x: hidden;
+}
+
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999999999999999;
+    stroke-dashoffset: 1000px;
+    stroke-dasharray: 1000px;
+}
+.animate{ 
+    animation: animation 30s cubic-bezier(0.19, 1, 0.22, 1)  both;
+
+}
+#background{
+  
+    width: 100%;
+    display: flex;
+    
+    height: 100%;
+    background-color: black;
+  
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 50%;
+    background-size:contain ;
+    width: 100%;
+     height: 100%;
+     /* to shaw the img in text we use this two line  */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-image: url(https://images.unsplash.com/photo-1673027115531-d11d16850fa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=60);
+
+}
+#circle {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1.0px solid rgb(255, 252, 252);
+    border-radius: 50%;
+    z-index: 990000099900;
+    pointer-events: none;
+}
+
+#wrapper h1{
+    color: #fff;
+    font-size: 600px;
+    font-family: monospace;
+    font-weight: 900; 
+    
+
+}
+
+#whitestrip{
+    display: flex;
+    justify-content: center;
+    align-items: center  ;
+    width: 46%;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    /*              height, width */
+    transform: translate(0%,-50%);
+
+}
+#blackcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 50%;
+    left: 0;
+    transform:translate(-50%,-50%);
+    background-color: black;
+}
+
+#blackcard p{
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+
+
+}
+
+#linelem{
+    display: flex;
+    align-items: center;
+
+}
+#linelem .line{
+ width: 150px;
+ height: 2px;
+ background-color: black;
+ margin:0 30px;
+
+}
+#linelem h4{
+ font-family: monospace;  
+ font-size: 13px; 
+}
+
+#linelem i{
+    cursor: pointer;
+}
+#background>h5{
+    position: absolute;
+    color: #fff;
+    font-family: monospace;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing:15px;
+    font-size: 8px;
+    /* this is how a text is transform in vertically  */
+    transform: rotate(-90deg);
+}
+
+@keyframes animation{
+    to{
+        stroke-dasharray: 450px;
+
+    }
+
+}
