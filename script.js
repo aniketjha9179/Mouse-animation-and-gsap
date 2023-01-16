@@ -10,13 +10,6 @@ let circle= document.querySelector('#circle')
 const btn=document.querySelector('#btn');
 const svgelem =document.querySelector('svg');
 
-
-
-
-
-
-
-
 window.addEventListener('mousemove',function(details){
    let xValue=details.clientX;
    let yValue=details.clientY;
