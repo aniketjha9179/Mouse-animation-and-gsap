@@ -1,6 +1,7 @@
 //1> i need to get the current positon of the mouse everu time i move
 // moveBy(x axis ,y axis) 
 
+
 // ================>>>
 
 // 2> i need to set those x and y values to the circular div 
@@ -28,9 +29,6 @@ setTimeout(function(){
 },3500)
 
 })
-
-
-
 
 let  tl=gsap.timeline();
 
